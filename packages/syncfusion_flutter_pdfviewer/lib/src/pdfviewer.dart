@@ -1928,7 +1928,7 @@ class SfPdfViewerState extends State<SfPdfViewer> with WidgetsBindingObserver {
               ? const Color(0xFFD6D6D6)
               : const Color(0xFF303030)),
     );
-    final Stack emptyLinearProgressView = Stack(
+    final Stack emptyLinearProgressView = SizedBox() ?? Stack(
       children: <Widget>[
         emptyContainer,
         LinearProgressIndicator(
